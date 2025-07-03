@@ -1,0 +1,22 @@
+package basics
+
+import "fmt"
+
+var firstname = "John"
+
+func main () {
+// 	var age int = 20
+// 	var name string = "James"
+// 	var name2 string = "John"
+// 
+// 	count := 10
+	firstname := "Doe"
+
+	fmt.Println(firstname)
+}
+
+
+func printName() {
+	firstname := "Jovi"
+	fmt.Println(firstname)
+}

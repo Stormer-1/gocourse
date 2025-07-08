@@ -1,0 +1,31 @@
+package main
+
+const pi = 3.142
+
+// untyped constant
+const gravity = 9.8
+
+func main() {
+
+	// typed constant
+	const days int = 7
+
+	// a const block; for grouping related consts together
+	const (
+		Monday        = 1
+		Tuesday       = 2
+		Wednesday     = 3
+		Thursday  int = 4
+	)
+
+	// Gopher declaration wouldn't work for consts. It's only available for variables
+	// name := "John"
+}
+
+// go supports both typed and untyped constants
+// untyped constants are constants that are not associated with a type until they are assigned to a value
+// typed constants are constants that are associated with a type
+// go will infer the type of the constant based on the value assigned to it
+// go will not infer the type of the constant if it is a complex expression
+// go will not infer the type of the constant if it is a function call
+// go will not infer the type of the constant if it is a method call

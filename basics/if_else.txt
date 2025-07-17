@@ -1,0 +1,81 @@
+package basics
+
+import "fmt"
+
+func main() {
+
+// 	age := 0
+// 
+// 	if age >= 18 {
+// 		fmt.Println("You are an adult")
+// 	} else if age <= 0 {
+// 		fmt.Println("You are not born yet")
+// 	} else {
+// 		fmt.Println("You are a senior citizen")
+// 	}
+
+// 	temperature := 18.0
+// 	if temperature >= 30.0 {
+// 		fmt.Println("It's warm outside")
+// 	} else if temperature <= 10.0 {
+// 		fmt.Println("It's cold outside")
+// 	} else {
+// 		fmt.Println("It's a nice day outside")
+// 	}
+// 
+// 	score := 80
+// 
+// 	if score >= 90 {
+// 		fmt.Println("You got an A")
+// 	} else if score >= 80 {
+// 		fmt.Println("You got a B")
+// 	} else if score >= 70 {
+// 		fmt.Println("You got a C")
+// 	} else if score >= 60 { 
+// 		fmt.Println("You got a D")
+// 	} else {
+// 		fmt.Println("You got an F")
+// 	}
+
+	score := 90
+
+	switch {
+		case score >= 90:
+			fmt.Println("You got an A")
+		case score >= 80:
+			fmt.Println("You got a B")
+		case score >= 70:
+			fmt.Println("You got a C")
+		case score >= 60:
+			fmt.Println("You got a D")
+		case score >= 50:
+			fmt.Println("You got a E")
+		default: 
+			fmt.Println("You got an F")
+	}
+
+	// NESTING CODE BLOCKS
+	num := 18
+	if num % 2 == 0 {
+		if num % 3 == 0 {
+			fmt.Println("The number is divisible by both 2 and 3")
+		} else {
+			fmt.Println("The number is divisible by 2 but not by 3")
+		}
+	} else {
+		fmt.Println("The number is not divisible by 2")
+	}
+
+	if 10%2 == 0 || 5%2 == 0 {
+		fmt.Println("One of the numbers is even")
+	} else {
+		fmt.Println("Both numbers are odd")
+	}
+
+	if 10%2 == 0 && 6%2 == 0 {
+		fmt.Println("Both numbers are even")
+	} else {
+		fmt.Println("One of the numbers is odd")
+	}
+}
+ 
